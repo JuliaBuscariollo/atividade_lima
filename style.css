@@ -1,62 +1,100 @@
 /* Estilo base */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #f0f4f8, #e693ff);
-    color: #52006a;
-    text-align: center;
-  }
-  
-  /* Cabeçalho */
-  header {
-    color: #fff;
-    background: linear-gradient(#85698f,#864da4);
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 3.2rem;
-  }
-  
-  header p {
-    margin: 5px 0 0;
-    font-style: italic;
-  }
-  
-  /* Seções */
-  section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgb(70, 0, 98);
-    list-style: none;
-  }
-  
-  section h2 {
-    color: #e9d0fe;
-    margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #f0f4f8, #e693ff, #85698f);
+  color: #52006a;
+  text-align: center;
+}
 
-  }
+/* Cabeçalho */
+header {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  background: linear-gradient(#85698f, #864da4);
+  padding: 20px 0;
+  width: 100%;
+  padding: 30px;
+  height: 250px;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  margin-left: 700px;
+  margin-bottom: 5%;
+  margin-top: -150px;
   
-  article ul li {
-    margin-bottom: 8px;
-    list-style-type: none;
-    
-  }
-  
-  /* Rodapé */
-  footer {
-    background: #825a8f;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 0.9rem;
-  }
-  
+
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(70, 0, 98, 0.5);
+  text-align: center; /* Melhor leitura */
+}
+
+section h2 {
+  color: #6a1b9a; /* Roxo mais forte para legibilidade */
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(#85698f, #864da4);
+  padding: 20px 0;
+  border: 15px;
+  border-radius: 5%;
+}
+
+/* Texto dentro dos artigos */
+article p {
+  margin-bottom: 15px;
+}
+
+/* Lista de valores */
+article ul {
+  list-style: none; /* Agora aplicado direto no UL */
+  padding: 0;
+}
+
+article ul li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+  text-align: center;
+}
+
+/* Ícone roxo decorativo nos itens */
+article ul li::after {
+  content: "✔";
+  color: #864da4;
+  align-content: center;
+  left: 0;
+}
+
+/* Rodapé */
+footer {
+  background: #825a8f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
