@@ -1,4 +1,12 @@
-/* Estilo base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -8,86 +16,94 @@ body {
   color: #52006a;
   text-align: center;
 }
-
 /* Cabeçalho */
-header {
-  display: inline-block;
-  text-align: left;
-  color: #fff;
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background: linear-gradient(#85698f, #864da4);
-  padding: 20px 0;
+
+  padding: 20px 50px;
+}
+
+#header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 140px;
+}
+
+#header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#header nav ul li a {
+  color: #fff;
+}
+
+#header nav ul li a:hover {
+  color: #bebebe;
+}
+
+#header p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#hero {
   width: 100%;
-  padding: 30px;
-  height: 250px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #9f80a8;
 }
 
-header img {
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#missao,
+#valores,
+#visao {
   width: 250px;
-  height: 250px;
-  margin-left: 800px;
-  margin-bottom: 5%;
-  margin-top: -150px;
-  border-radius: 50%;
-  
+  height: 300px;
 
+  background-color: #52006a;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 3.2rem;
-}
-
-header p {
-  margin: 5px 0 0;
-  font-style: italic;
-}
-
-/* Seções */
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(70, 0, 98, 0.5);
-  text-align: center; /* Melhor leitura */
-}
-
-section h2 {
-  color: #6a1b9a; /* Roxo mais forte para legibilidade */
-  margin-bottom: 10px;
-  text-align: center;
+#missao h2,
+#valores h2,
+#visao h2,
+#missao p,
+#valores p,
+#visao p {
   color: #fff;
-  background: linear-gradient(#85698f, #864da4);
-  padding: 20px 0;
-  border: 15px;
-  border-radius: 5%;
-}
-
-/* Texto dentro dos artigos */
-article p {
-  margin-bottom: 15px;
-}
-
-/* Lista de valores */
-article ul {
-  list-style: none; /* Agora aplicado direto no UL */
-  padding: 0;
-}
-
-article ul li {
-  margin-bottom: 8px;
-  padding-left: 15px;
-  position: relative;
-  text-align: center;
-}
-
-/* Ícone roxo decorativo nos itens */
-article ul li::after {
-  content: "✔";
-  color: #864da4;
-  align-content: center;
-  left: 0;
 }
 
 /* Rodapé */
